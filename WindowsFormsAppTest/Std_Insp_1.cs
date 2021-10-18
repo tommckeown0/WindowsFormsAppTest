@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppTest
 {
-    public partial class Std_Insp : Form
+    public partial class Std_Insp_1 : Form
     {
-        public Std_Insp()
+        public Std_Insp_1()
         {
             InitializeComponent();
         }
@@ -119,9 +119,11 @@ namespace WindowsFormsAppTest
             string supervisor = textBox6.Text;
             string inspector = textBox7.Text;
             string type = textBox8.Text;
-            string concat = (site + "\n" + comp_By + "\n" + date + "\n" + work_Area + "\n" + job_Desc + "\n" +
-                supervisor + "\n" + inspector + "\n" + type);
-            MessageBox.Show(concat);
+
+            Home home = new Home();
+            home.Show();
+            this.Close();
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

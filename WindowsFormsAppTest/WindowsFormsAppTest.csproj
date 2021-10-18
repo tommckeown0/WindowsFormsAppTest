@@ -33,8 +33,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf, Version=21.1.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>..\packages\Select.HtmlToPdf.NetCore.21.1.0\lib\net472\Select.HtmlToPdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +74,24 @@
     <Compile Include="Conf_Sp.Designer.cs">
       <DependentUpon>Conf_Sp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Commend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commend.Designer.cs">
+      <DependentUpon>Commend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interv.Designer.cs">
+      <DependentUpon>Interv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Std_Insp_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Std_Insp_2.Designer.cs">
+      <DependentUpon>Std_Insp_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hot_Wrk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +104,25 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Std_Insp.cs">
+    <Compile Include="Std_Insp_1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Std_Insp.Designer.cs">
-      <DependentUpon>Std_Insp.cs</DependentUpon>
+    <Compile Include="Std_Insp_1.Designer.cs">
+      <DependentUpon>Std_Insp_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Conf_Sp.resx">
       <DependentUpon>Conf_Sp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commend.resx">
+      <DependentUpon>Commend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interv.resx">
+      <DependentUpon>Interv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Std_Insp_2.resx">
+      <DependentUpon>Std_Insp_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -81,8 +130,8 @@
     <EmbeddedResource Include="Hot_Wrk.resx">
       <DependentUpon>Hot_Wrk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Std_Insp.resx">
-      <DependentUpon>Std_Insp.cs</DependentUpon>
+    <EmbeddedResource Include="Std_Insp_1.resx">
+      <DependentUpon>Std_Insp_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +142,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

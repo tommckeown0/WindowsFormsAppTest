@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsAppTest
 {
-    partial class Std_Insp
+    partial class Std_Insp_1
     {
         /// <summary>
         /// Required designer variable.
